@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="30.75">
+    <testcase classname="Search anything from google page" name="Search any value from google" time="10.463">
+        <system-out><![CDATA[Given I am on Google homepage...............................................passed
+When i enter "<SearchItems>" on searchbox...................................passed
+Then i should see the results...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search anything from google page" name="Search any value from google 2" time="10.566">
+        <system-out><![CDATA[Given I am on Google homepage...............................................passed
+When i enter "<SearchItems>" on searchbox...................................passed
+Then i should see the results...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search anything from google page" name="Search any value from google 3" time="9.406">
+        <failure message="element click intercepted: Element &lt;input class=&quot;gNO89b&quot; value=&quot;Google Search&quot; aria-label=&quot;Google Search&quot; name=&quot;btnK&quot; role=&quot;button&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; data-ved=&quot;0ahUKEwjR5_D37ub2AhVWzDgGHWFdAo0Q4dUDCAs&quot;&gt; is not clickable at point (554, 271). Other element would receive the click: &lt;b&gt;...&lt;/b&gt;&#10;  (Session info: chrome=99.0.4844.82)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'ITEM-S109650', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1df9551ba62d903e80fec41f103ef7e3, clickElement {id=deab2196-c5d2-40a7-8bb6-a57e4b9a5ce6}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\dutiwari\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55819/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (1df9551ba62d903e80fec41f103ef7e3)] -&gt; xpath: (.//input[@value='Google Search'])[2]]&#10;Session ID: 1df9551ba62d903e80fec41f103ef7e3" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given I am on Google homepage...............................................passed
+When i enter "<SearchItems>" on searchbox...................................failed
+Then i should see the results...............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwjR5_D37ub2AhVWzDgGHWFdAo0Q4dUDCAs"> is not clickable at point (554, 271). Other element would receive the click: <b>...</b>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'ITEM-S109650', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1df9551ba62d903e80fec41f103ef7e3, clickElement {id=deab2196-c5d2-40a7-8bb6-a57e4b9a5ce6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\dutiwari\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55819/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1df9551ba62d903e80fec41f103ef7e3)] -> xpath: (.//input[@value='Google Search'])[2]]
+Session ID: 1df9551ba62d903e80fec41f103ef7e3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at stepImplementations.GoogleStepDefiantions.i_enter_on_searchbox(GoogleStepDefiantions.java:28)
+	at ✽.i enter "<SearchItems>" on searchbox(file:///C:/Users/dutiwari/eclipse-workspace/Janbask_Cuucmber_26Feb/src/test/java/scenarios/googleSearch.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>
