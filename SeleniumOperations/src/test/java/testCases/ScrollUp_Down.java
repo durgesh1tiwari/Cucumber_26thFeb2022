@@ -17,11 +17,11 @@ public class ScrollUp_Down extends ReadConfigProperty {
 
 	@Test(priority = 1)
 	public void testCase_1() throws IOException, InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\dutiwari\\Downloads\\ChromeDriver\\chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\dutiwari\\Downloads\\ChromeDriver\\chromedriver.exe");
 
 		String url = readConfig.getConfigProperty("salesForce").toString();
 		
-		driver = new ChromeDriver();
+	//	driver = new ChromeDriver();
 		
 		driver.get(url);
 		
@@ -42,11 +42,11 @@ public class ScrollUp_Down extends ReadConfigProperty {
 	
 	@Test(priority = 2)
 	public void testCase_2() throws IOException, InterruptedException {
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\dutiwari\\Downloads\\geckodriver-v0.30.0-win64 (3)\\geckodriver.exe");
+	//	System.setProperty("webdriver.gecko.driver", "C:\\Users\\dutiwari\\Downloads\\geckodriver-v0.30.0-win64 (3)\\geckodriver.exe");
 
 		String url = readConfig.getConfigProperty("salesForce").toString();
 		
-		driver = new FirefoxDriver();
+	//	driver = new FirefoxDriver();
 		
 		driver.get(url);
 		

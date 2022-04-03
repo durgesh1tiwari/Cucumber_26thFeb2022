@@ -11,7 +11,7 @@ import org.testng.annotations.Parameters;
 
 public class CrossBrowserTestCases {
 
-	WebDriver driver;
+public static WebDriver driver;
 
 	public WebDriver openBrowser(String browser, @Optional("url") String url) throws MalformedURLException {
 

@@ -23,7 +23,7 @@ public class MouserHover extends ReadConfigProperty {
 
 		String url = readConfig.getConfigProperty("salesForce").toString();
 		
-		driver = new ChromeDriver();
+	//	driver = new ChromeDriver();
 		
 		driver.get(url);
 		

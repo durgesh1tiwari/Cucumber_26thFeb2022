@@ -17,7 +17,7 @@ public class TestCase1_ReadFromConfig extends ReadConfigProperty {
 
 	@Test()
 	public void testCase_1() throws IOException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\dutiwari\\Downloads\\ChromeDriver\\chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\dutiwari\\Downloads\\ChromeDriver\\chromedriver.exe");
 
 		String appUrl = readConfig.getConfigProperty("AppURL");
 		String username = readConfig.getConfigProperty("username");
@@ -27,7 +27,7 @@ public class TestCase1_ReadFromConfig extends ReadConfigProperty {
 		System.out.println(username);
 		System.out.println(passwd);
 
-		driver = new ChromeDriver();
+	//	driver = new ChromeDriver();
 		driver.get(appUrl);
 
 		driver.manage().window().maximize();
